@@ -1,0 +1,46 @@
+.not-found {
+    padding: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+}
+
+.not-found ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found ul li {
+    margin: 0 10px;
+    list-style-type:none;
+}
+
+.not-found ul p {
+    text-align: center;
+}
+
+.not-found ul a {
+    cursor: pointer;
+}
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 12px;
+    color: #ffffff;
+
+    background: #446CB3;
+    font-size: 20px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px #333;
+    transition: background 0.3s ease-in;
+    text-decoration: none;
+}
+
+.modal-btn:hover {
+    background: #365690;
+    color: #ffffff;
+}
