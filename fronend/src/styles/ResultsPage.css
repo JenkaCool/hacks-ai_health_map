@@ -1,7 +1,15 @@
 .results-list {
-
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
-.results-list div {
-
+.analysis, .compare, .recomend {
+    background:#F1F3DD;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 24px 36px;
 }
