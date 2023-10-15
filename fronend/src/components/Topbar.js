@@ -23,18 +23,19 @@ const Topbar = () => {
             <div className="logo">
                 <Link to="/">
                     <img
+                        className="round-logo"
                         src={logoImg}
                         alt="Логотип"
-                        width={120}
-                        height={120}
+                        width={100}
+                        height={100}
                     />
                 </Link>
             </div>
             <div className="header-text">
-                <p>Влияние городской инфраструктуры на здоровье</p>
+                <h2>Влияние городской инфраструктуры на здоровье</h2>
                 <div id="towns" className="select-town in-one-row">
-                    <select  onChange={handleSelectedTown}>
-                        <option hidden>Выбрать город</option>
+                    <select className="custom-select" onChange={handleSelectedTown}>
+                        <option hidden>Выбрать город...</option>
                         <option id="t1">Екатеринбугр</option>
                         <option id="t2">Петрозаводск</option>
                         <option id="t3">Тула</option>

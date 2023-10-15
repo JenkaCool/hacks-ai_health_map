@@ -8,7 +8,6 @@ import { StrictMode } from "react";
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import AboutProjectPage from './components/AboutProjectPage';
 import MapPage from './components/MapPage';
 import ResultsPage from './components/ResultsPage';
 import NotFoundPage from './components/NotFoundPage';
@@ -19,9 +18,8 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />}>
-                    <Route index element={<AboutProjectPage/> } />
-                    <Route exact path="searching" element={<MapPage/>} />
+                <Route path="/" element={<App/>}>
+                    <Route index element={<MapPage/>}/>
                     <Route exact path="results" element={<ResultsPage/>} />
                     <Route path="*" element={<NotFoundPage/>} />
                 </Route>

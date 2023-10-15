@@ -1,19 +1,36 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
 
 body {
-  background: #D7FD9B;
-  color: white;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
 }
 
-header {
-  display: flex;
-  width: 100%;
-  height: 120px;
-  background: #7BA736;
-  padding-top: 16px;
-  padding-bottom: 16px;
+.Content {
+  padding: 46px 32px;
 }
 
-option{
+h1 {
+  font-family: Merriweather, serif;
+}
+
+a {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+option {
   color:#3C591E;
 }
 
@@ -21,39 +38,27 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 300px;
+  width: 360px;
   margin: 0 auto;
+  padding: 36px;
 }
 
 form p {
   color: #3C591E;
 }
 
-input{
-  height:35px;
-  width:485px;
-  border-radius:20px;
-  border-color:#3C591E;
-}
-a{
+a {
   font-size: 20px;
   font-weight: medium;
   color:white;
   user-select: none;
   text-decoration: none;
 }
-#btn{
-  background: #3C591E;
-  border-radius:20px;
-  padding: 1em 2em;
-}
-#btn:hover{
-  background-color: #517829;
-}
 
 .search {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 
 }
 .search-list{
@@ -65,18 +70,31 @@ a{
   overflow-y: auto;
 }
 
-.map{
+.map {
   height: 453px;
   width: 581px;
   margin-left:20%;
 }
-.choose-from{
+
+.choose-from {
+  display: flex;
+  gap: 12px;
+  align-items: center;
   background:#F1F3DD;
-  height:351px;
-  width:485px;
+  min-width:500px;
   border-width:1px;
   border-radius:20px;
   border-color:#3C591E;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  padding: 48px;
+}
+
+.choose-from select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 360px;
+  padding: 10px;
+  font-size: 16px;
 }

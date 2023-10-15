@@ -3,12 +3,12 @@ import { useState, useEffect } from 'react';
 import {Route, Routes, BrowserRouter, Link} from 'react-router-dom';
 import { useNavigate, Outlet } from "react-router-dom";
 
+import Button from './Button';
+
 function ResultsPage() {
     return (
         <>
-            <Link to="/searching">
-                <button>Вернуться</button>
-            </Link>
+            <Button text={"Вернуться"} link={`/`}/>
         </>
     );
 }
