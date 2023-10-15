@@ -9,6 +9,11 @@ function ResultsPage() {
     return (
         <>
             <Button text={"Вернуться"} link={`/`}/>
+            <div className="results-list">
+                <div className="analysis"></div>
+                <div className="compare"></div>
+                <div className="recomend"></div>
+            </div>
         </>
     );
 }
